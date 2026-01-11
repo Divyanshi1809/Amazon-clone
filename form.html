@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                color:black;
+                text-align:center;
+                font-size: 20px;
+                width: 100%;
+                background-color: blanchedalmond;
+            }
+            h1{
+                color:rgba(0, 0, 0, 0.542);
+                text-align:center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                background-image:url('favicon.JPG');
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <title>HTML FORM</title>
+        <link rel="icon" type="image/x-icon" href="C:\Users\sunit\OneDrive\html\favicon.JPG">
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form action="C:\Users\sunit\OneDrive\Desktop\Kashmir\New folder" method="get">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" autofocus><br>
+            <label for="mname">Middle Name:</label><br>
+            <input type="text" id="mname" name="mname" autofocus><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" autofocus><br>
+            <label for="email">Enter The Mail:</label><br>
+            <input type="email" id="email" name="email" autofocus><br>
+            <label for="DOB">DOB:</label><br>
+            <input type="date" id="DOB" name="DOB" autofocus><br>
+            <label for="choices">State:</label><br>
+            <select name="choices" id="choices">
+             <option value="none">none</option>  
+            <option value="Maharastra">Maharastra</option>
+            <option value="Gujrat">Gujrat</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="J&K">J&K</option>
+            <option value="Dehra dun">Dehra dun</option>
+            </select><br>
+            <p>Preferred Language:</p>
+            <input type="radio" id="English" name="language" value="English">
+            <label for="English">English</label><br>
+            <input type="radio" id="Hindi" name="language" value="Hindi">
+            <label for ="Hindi">Hindi</label><br>
+            <input type="radio" id="French" name="language" value="French">
+            <label for="French">French</label><br>
+            <input type="radio" id="German" name="language" value="German">
+            <label for ="German">German</label><br>
+            <input type="radio" id="Japanese" name="language" value="Japanese">
+            <label for="Japanese">Japanese</label><br>
+            <input type="radio" id="Korean" name="language" value="Korean">
+            <label for ="Korean">Korean</label><br>
+            <p>Intrested Computer Language:</p>
+            <input type="checkbox" id="HTML" name="html" value="Html">
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="CSS" name="CSS" value="CSS">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="JS" name="JS" value="JS">
+            <label for="JS">JavaScript</label>
+            <input type="checkbox" id="C" name="C" value="C">
+            <label for="C">C Language</label>
+            <input type="checkbox" id="Java" name="java" value="java">
+            <label for="Java">JAVA</label>
+            <input type="checkbox" id="C++" name="C++" value="C++">
+            <label for="C++">C++</label>
+            <input type="checkbox" id="Python" name="Python" value="Python">
+            <label for="Python">Python</label>
+            <input type="checkbox" id="C#" name="C#" value="C#">
+            <label for="C#">C#</label>
+            <br> 
+            <br>
+            <p>pre-defined options:</p>
+            <input lis="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="edge">edge</option>
+                <option value="firefox">firefox</option>
+                <option value="chrome">chrome</option>
+                <option value="opera">opera</option>
+                <option value="safari">safari</option>
+            </datalist>
+            <br>
+            <label for="myfile">Upload a File:</label><br>
+            <input type="file" id="myfile" name="myfile" autofocus>
+            <br>
+            <label for="Months">Number of Months</label><br>
+            <input type="number" id="Months" name="Months" min="3" max="60" autofocus>
+            <br>
+            <label for="phone">Enter Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" autofocus>
+            <br>
+            <label for="appt">Number of hours for work</label><br>
+            <input type="time" id="appt" name="appt" autofocus>
+            <br>
+            <label for="week">No. of Weeks</label><br>
+            <input type="week" id="week" name="week" autofocus>
+            <br>
+            <label for="homepage">Add homepage</label><br>
+            <input type="url" id="homepage" name="homepage" autofocus>
+            <br>
+            <label for="feedback">Feedback</label><br>
+            <input type="range" id="feedback" name="feedback" min="0" max="100" autofocus>
+            <br>
+            <label for="join">Month of Joining</label><br>
+            <input type="month" id="join" name="join" autofocus>
+            <br>
+            <label for="dt">Date and Time:</label><br>
+            <input type="datetime-local" id="dt" name="dt" autofocus>
+            <br>
+            <label for="username">UserName:</label><br>
+            <input type="text" id="username" name="username" autofocus>
+            <br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" autofocus>
+            <br>
+            <label for="pwd"> Confirm Password:</label><br>
+            <input type="password" id="pwd" name="pwd" autofocus>
+            <br>
+            <input type="image" src="C:\Users\sunit\OneDrive\Desktop\Kashmir\IMG-20240710-WA0255.jpg" alt="Submit" width="48" heigth="48">
+            <br>
+            <label for="color">Select the Color:</label><br>
+            <input type="color" id="color" name="color" autofocus>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+
+                        </form>
+    </body>
+</html>
